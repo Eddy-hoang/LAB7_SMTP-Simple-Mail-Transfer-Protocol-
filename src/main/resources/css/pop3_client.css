@@ -1,0 +1,266 @@
+/* =====================================================
+   POP3 Client — Inbox Window Stylesheet
+   ===================================================== */
+
+.inbox-root {
+    -fx-background-color: #0f1117;
+}
+
+/* Header */
+.inbox-header {
+    -fx-background-color: linear-gradient(to right, #1a1d2e, #0f1117);
+    -fx-border-color: #2a2d3e;
+    -fx-border-width: 0 0 1 0;
+}
+
+.inbox-title {
+    -fx-text-fill: #e2e8f0;
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-font-family: 'Inter', 'Segoe UI', sans-serif;
+}
+
+/* Connection Bar */
+.conn-bar {
+    -fx-background-color: #131520;
+    -fx-border-color: #1e2135;
+    -fx-border-width: 0 0 1 0;
+}
+
+.conn-label {
+    -fx-text-fill: #64748b;
+    -fx-font-size: 12px;
+}
+
+.conn-field {
+    -fx-background-color: #1a1d2e;
+    -fx-text-fill: #e2e8f0;
+    -fx-border-color: #2e3354;
+    -fx-border-radius: 6;
+    -fx-background-radius: 6;
+    -fx-font-size: 12px;
+    -fx-padding: 4 8 4 8;
+}
+
+.btn-refresh {
+    -fx-background-color: linear-gradient(to right, #0ea5e9, #06b6d4);
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 13px;
+    -fx-background-radius: 8;
+    -fx-cursor: hand;
+    -fx-padding: 6 16 6 16;
+}
+
+.btn-refresh:hover {
+    -fx-background-color: linear-gradient(to right, #0284c7, #0891b2);
+    -fx-effect: dropshadow(gaussian, #0ea5e980, 10, 0.4, 0, 2);
+}
+
+/* Email Sidebar */
+.email-sidebar {
+    -fx-background-color: #1a1d2e;
+    -fx-border-color: #2a2d3e;
+    -fx-border-width: 0 1 0 0;
+}
+
+.sidebar-title {
+    -fx-text-fill: #64748b;
+    -fx-font-size: 11px;
+    -fx-font-weight: bold;
+}
+
+/* Email List */
+.email-list {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+.email-list .list-cell {
+    -fx-background-color: transparent;
+    -fx-padding: 0;
+    -fx-border-color: #1e2135;
+    -fx-border-width: 0 0 1 0;
+}
+
+.email-list .list-cell:selected {
+    -fx-background-color: #242740;
+}
+
+.email-list .list-cell:hover {
+    -fx-background-color: #1e2135;
+    -fx-cursor: hand;
+}
+
+/* Email Cell */
+.email-cell {
+    -fx-background-color: transparent;
+}
+
+.cell-from {
+    -fx-text-fill: #e2e8f0;
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+}
+
+.cell-subject {
+    -fx-text-fill: #94a3b8;
+    -fx-font-size: 12px;
+}
+
+.cell-date {
+    -fx-text-fill: #475569;
+    -fx-font-size: 11px;
+}
+
+.cell-size {
+    -fx-text-fill: #475569;
+    -fx-font-size: 11px;
+}
+
+/* Email Viewer */
+.email-viewer {
+    -fx-background-color: #0f1117;
+}
+
+.email-header-box {
+    -fx-background-color: #131520;
+    -fx-border-color: #1e2135;
+    -fx-border-width: 0 0 1 0;
+}
+
+.viewer-sender {
+    -fx-text-fill: #94a3b8;
+    -fx-font-size: 13px;
+}
+
+.viewer-subject {
+    -fx-text-fill: #e2e8f0;
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+}
+
+.viewer-date {
+    -fx-text-fill: #475569;
+    -fx-font-size: 12px;
+}
+
+/* Buttons */
+.btn-delete {
+    -fx-background-color: transparent;
+    -fx-text-fill: #ef4444;
+    -fx-border-color: #ef4444;
+    -fx-border-radius: 7;
+    -fx-background-radius: 7;
+    -fx-font-size: 12px;
+    -fx-cursor: hand;
+    -fx-padding: 5 14 5 14;
+}
+
+.btn-delete:hover {
+    -fx-background-color: #ef444420;
+}
+
+.btn-save {
+    -fx-background-color: transparent;
+    -fx-text-fill: #6366f1;
+    -fx-border-color: #6366f1;
+    -fx-border-radius: 7;
+    -fx-background-radius: 7;
+    -fx-font-size: 12px;
+    -fx-cursor: hand;
+    -fx-padding: 5 14 5 14;
+}
+
+.btn-save:hover {
+    -fx-background-color: #6366f120;
+}
+
+/* Attachment Panel */
+.attachment-panel {
+    -fx-background-color: #131520;
+    -fx-border-color: #1e2135;
+    -fx-border-width: 0 0 1 0;
+}
+
+.attach-count {
+    -fx-text-fill: #64748b;
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+}
+
+.attachment-chip {
+    -fx-background-color: #1a1d2e;
+    -fx-background-radius: 6;
+    -fx-padding: 5 10 5 10;
+    -fx-border-color: #2e3354;
+    -fx-border-radius: 6;
+    -fx-border-width: 1;
+}
+
+.attachment-name {
+    -fx-text-fill: #94a3b8;
+    -fx-font-size: 12px;
+}
+
+.btn-download {
+    -fx-background-color: #22c55e20;
+    -fx-text-fill: #22c55e;
+    -fx-border-color: #22c55e;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+    -fx-font-size: 11px;
+    -fx-cursor: hand;
+    -fx-padding: 3 10 3 10;
+}
+
+.btn-download:hover {
+    -fx-background-color: #22c55e30;
+}
+
+/* Body Tabs */
+.body-tabs {
+    -fx-background-color: #0f1117;
+    -fx-tab-min-height: 32;
+}
+
+.body-tabs .tab-header-area {
+    -fx-background-color: #131520;
+    -fx-border-color: #1e2135;
+    -fx-border-width: 0 0 1 0;
+}
+
+.body-tabs .tab {
+    -fx-background-color: transparent;
+    -fx-text-fill: #64748b;
+    -fx-font-size: 12px;
+    -fx-padding: 6 16 6 16;
+}
+
+.body-tabs .tab:selected {
+    -fx-background-color: #0f1117;
+    -fx-text-fill: #e2e8f0;
+    -fx-border-color: #6366f1;
+    -fx-border-width: 0 0 2 0;
+}
+
+.body-text {
+    -fx-background-color: #0f1117;
+    -fx-text-fill: #e2e8f0;
+    -fx-font-family: 'Consolas', 'Courier New', monospace;
+    -fx-font-size: 13px;
+    -fx-control-inner-background: #0f1117;
+    -fx-border-color: transparent;
+}
+
+/* Status Bar */
+.status-bar {
+    -fx-background-color: #131520;
+    -fx-border-color: #1e2135;
+    -fx-border-width: 1 0 0 0;
+}
+
+.status-text {
+    -fx-text-fill: #64748b;
+    -fx-font-size: 12px;
+}

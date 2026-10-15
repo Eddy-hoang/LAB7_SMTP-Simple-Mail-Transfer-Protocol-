@@ -1,0 +1,224 @@
+/* =====================================================
+   SMTP Client — Compose Window Stylesheet
+   ===================================================== */
+
+.compose-root {
+    -fx-background-color: #0f1117;
+}
+
+.compose-header {
+    -fx-background-color: linear-gradient(to right, #1a1d2e, #0f1117);
+    -fx-border-color: #2a2d3e;
+    -fx-border-width: 0 0 1 0;
+}
+
+.compose-title {
+    -fx-text-fill: #e2e8f0;
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-font-family: 'Inter', 'Segoe UI', sans-serif;
+}
+
+.compose-form {
+    -fx-background-color: #0f1117;
+}
+
+/* Settings Row */
+.settings-row {
+    -fx-background-color: #1a1d2e;
+    -fx-background-radius: 8;
+    -fx-padding: 8 12 8 12;
+    -fx-border-color: #2a2d3e;
+    -fx-border-radius: 8;
+    -fx-border-width: 1;
+}
+
+.settings-icon {
+    -fx-font-size: 16px;
+}
+
+.settings-label {
+    -fx-text-fill: #64748b;
+    -fx-font-size: 12px;
+}
+
+.settings-field {
+    -fx-background-color: #242740;
+    -fx-text-fill: #e2e8f0;
+    -fx-border-color: #2e3354;
+    -fx-border-radius: 6;
+    -fx-background-radius: 6;
+    -fx-font-size: 12px;
+    -fx-padding: 4 8 4 8;
+}
+
+.tls-check {
+    -fx-text-fill: #94a3b8;
+    -fx-font-size: 12px;
+}
+
+/* Form Fields */
+.field-label {
+    -fx-text-fill: #64748b;
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+}
+
+.field-input {
+    -fx-background-color: #1a1d2e;
+    -fx-text-fill: #e2e8f0;
+    -fx-border-color: #2e3354;
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+    -fx-border-width: 1;
+    -fx-font-size: 13px;
+    -fx-padding: 8 12 8 12;
+}
+
+.field-input:focused {
+    -fx-border-color: #6366f1;
+    -fx-effect: dropshadow(gaussian, #6366f140, 8, 0.3, 0, 0);
+}
+
+.field-input-optional {
+    -fx-background-color: #131520;
+    -fx-text-fill: #94a3b8;
+    -fx-border-color: #1e2135;
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+    -fx-border-width: 1;
+    -fx-font-size: 13px;
+    -fx-padding: 8 12 8 12;
+}
+
+.field-input-optional:focused {
+    -fx-border-color: #6366f1;
+    -fx-text-fill: #e2e8f0;
+}
+
+/* Body Area */
+.body-area {
+    -fx-background-color: #1a1d2e;
+    -fx-text-fill: #e2e8f0;
+    -fx-border-color: #2e3354;
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+    -fx-border-width: 1;
+    -fx-font-size: 13px;
+    -fx-control-inner-background: #1a1d2e;
+}
+
+.body-area:focused {
+    -fx-border-color: #6366f1;
+}
+
+/* HTML Toggle */
+.toggle-html {
+    -fx-background-color: #242740;
+    -fx-text-fill: #64748b;
+    -fx-font-size: 11px;
+    -fx-background-radius: 6;
+    -fx-border-color: #2e3354;
+    -fx-border-radius: 6;
+    -fx-padding: 3 10 3 10;
+    -fx-cursor: hand;
+}
+
+.toggle-html:selected {
+    -fx-background-color: #6366f1;
+    -fx-text-fill: white;
+    -fx-border-color: #6366f1;
+}
+
+/* Attachment */
+.attachment-chip {
+    -fx-background-color: #1a1d2e;
+    -fx-background-radius: 6;
+    -fx-padding: 6 10 6 10;
+    -fx-border-color: #2e3354;
+    -fx-border-radius: 6;
+    -fx-border-width: 1;
+}
+
+.attachment-name {
+    -fx-text-fill: #94a3b8;
+    -fx-font-size: 12px;
+}
+
+.btn-attach {
+    -fx-background-color: transparent;
+    -fx-text-fill: #6366f1;
+    -fx-border-color: #6366f1;
+    -fx-border-radius: 6;
+    -fx-background-radius: 6;
+    -fx-font-size: 12px;
+    -fx-cursor: hand;
+    -fx-padding: 4 12 4 12;
+}
+
+.btn-attach:hover {
+    -fx-background-color: #6366f120;
+}
+
+.btn-remove-attach {
+    -fx-background-color: transparent;
+    -fx-text-fill: #ef4444;
+    -fx-border-color: transparent;
+    -fx-font-size: 11px;
+    -fx-cursor: hand;
+}
+
+/* Action Bar */
+.action-bar {
+    -fx-background-color: #1a1d2e;
+    -fx-border-color: #2a2d3e;
+    -fx-border-width: 1 0 0 0;
+}
+
+.btn-send {
+    -fx-background-color: linear-gradient(to right, #6366f1, #8b5cf6);
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-background-radius: 10;
+    -fx-cursor: hand;
+    -fx-padding: 10 24 10 24;
+}
+
+.btn-send:hover {
+    -fx-background-color: linear-gradient(to right, #4f46e5, #7c3aed);
+    -fx-effect: dropshadow(gaussian, #6366f180, 12, 0.4, 0, 2);
+}
+
+.btn-secondary {
+    -fx-background-color: transparent;
+    -fx-text-fill: #64748b;
+    -fx-border-color: #2a2d3e;
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+    -fx-font-size: 13px;
+    -fx-cursor: hand;
+    -fx-padding: 8 16 8 16;
+}
+
+.btn-secondary:hover {
+    -fx-text-fill: #e2e8f0;
+    -fx-border-color: #3a3d5e;
+}
+
+.status-label {
+    -fx-font-size: 12px;
+}
+
+.status-error {
+    -fx-text-fill: #ef4444;
+}
+
+.status-success {
+    -fx-text-fill: #22c55e;
+}
+
+/* Separator */
+.separator .line {
+    -fx-border-color: #2a2d3e;
+}

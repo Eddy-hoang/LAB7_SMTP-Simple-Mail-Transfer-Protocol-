@@ -34,7 +34,7 @@ public class MimeBuilder {
 
         sb.append("Subject: ").append(encodeHeader(message.getSubject())).append("\r\n");
         sb.append("Date: ").append(
-                message.getDate().format(DateTimeFormatter.RFC_1123_DATE_TIME)
+                message.getDate().atZone(java.time.ZoneId.systemDefault()).format(DateTimeFormatter.RFC_1123_DATE_TIME)
         ).append("\r\n");
         sb.append("MIME-Version: 1.0").append("\r\n");
 

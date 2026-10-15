@@ -184,7 +184,7 @@ public class MimeParser {
     private static LocalDateTime parseDate(String dateStr) {
         try {
             DateTimeFormatter formatter = DateTimeFormatter.RFC_1123_DATE_TIME;
-            return LocalDateTime.parse(dateStr, formatter);
+            return java.time.ZonedDateTime.parse(dateStr, formatter).toLocalDateTime();
         } catch (Exception e) {
             return LocalDateTime.now();
         }
